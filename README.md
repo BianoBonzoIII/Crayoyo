@@ -14,11 +14,9 @@ The Mechanics of Our Algorithm:
 3) If the left index is less than the right index, use the new value in Step 2 to partition the "left-half" of the array. The    left-index and the pivot position - 1 are the boundaries of the partition. Then, partition the "right-half" of the            array. Pivot Position + 1 and the right-index are the boundaries of the partition. 
 4) If the right-index is greater than the left-index, that means the array has been sorted. If so, do nothing. 
 
-Best Case: Odd-sized array where the pivot position is at the middle of the array <br />
-Average Case: Pivot position is left<br />
-Worst Case: Even-sized array of ascending order<br />
-
-In order to enhance the efficiency of the experimentation, we made multiple versions of the quickSort() method such that each method caters to each case. For Best Case, the pivot position is (right+left)/2. For Average Case, the pivot position is the left. For Worst Case, the pivot position is left and the array is in ascending order. 
+Best Case: Odd-sized array where the pivot position is at the middle of the array {(right+left)/2} <br />
+Average Case: Pivot position is left <br />
+Worst Case: Even-sized array of ascending order and pivot position is left <br />
 
 # Experiment methodology
 For our experiment, we wanted to test the runtime of our algorithm as the size of the array increases. 
