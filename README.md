@@ -18,25 +18,25 @@ Best Case: Odd-sized array where the pivot position is at the middle of the arra
 Average Case: Pivot position is left <br />
 Worst Case: Even-sized array of ascending order and pivot position is left <br />
 
-Example Best Case Trace: 
-arr = {6, 5, 0, 10, 0}
+Example Best Case Trace:  <br />
+arr = {6, 5, 0, 10, 0}  <br />
 
-Example Average Case Trace: 
-arr = {7,1,5,12,3}   
-{3, 1, 5, 12, 7}   ---------------->  left: 0  right: 4
-{1, 3, 5, 7, 12}   ---------------->  left: 0  right: 2
-{1, 3, 5, 7, 12}   ---------------->  left: 1  right: 2
-{1, 3, 5, 7, 12}   ---------------->  left: 2  right: 2
+Example Average Case Trace:  <br />
+arr = {7,1,5,12,3}    <br />
+{3, 1, 5, 12, 7}   ---------------->  left: 0  right: 4  <br />
+{1, 3, 5, 7, 12}   ---------------->  left: 0  right: 2  <br />
+{1, 3, 5, 7, 12}   ---------------->  left: 1  right: 2  <br />
+{1, 3, 5, 7, 12}   ---------------->  left: 2  right: 2  <br />
        DONE
 
-Example Worst Case Trace: 
-arr = {1, 2, 3, 4, 5, 6}   
-{1, 2, 3, 4, 5, 6}   ---------------->  left: 0  right: 5
-{1, 6, 3, 4, 5, 2}   ---------------->  left: 1  right: 5
-{1, 2, 6, 4, 5, 3}   ---------------->  left: 2  right: 5
-{1, 2, 3, 6, 5, 4}   ---------------->  left: 3  right: 5
-{1, 2, 3, 4, 5, 6}   ---------------->  left: 4  right: 5 
-1, 2, 3, 4, 5, 6}   ---------------->  left: 5  right: 5
+Example Worst Case Trace:  <br />
+arr = {1, 2, 3, 4, 5, 6}    <br />
+{1, 2, 3, 4, 5, 6}   ---------------->  left: 0  right: 5  <br />
+{1, 6, 3, 4, 5, 2}   ---------------->  left: 1  right: 5  <br />
+{1, 2, 6, 4, 5, 3}   ---------------->  left: 2  right: 5  <br />
+{1, 2, 3, 6, 5, 4}   ---------------->  left: 3  right: 5  <br />
+{1, 2, 3, 4, 5, 6}   ---------------->  left: 4  right: 5  <br />
+1, 2, 3, 4, 5, 6}   ---------------->  left: 5  right: 5   <br />
        DONE
 
 # Experiment methodology
