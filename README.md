@@ -5,38 +5,32 @@
 ###### 2018-03-03
 
 # Hypothesis
-**
+*The Best Case Scenario and Average Case Scenario for QuickSort have O(nlogn) runtime while the Worst Case Scenario for QuickSort has a O(n^2) runtime.*
 
 # Background 
 The Mechanics of Our Algorithm: 
-1) 
-2) 
-3) 
-4) 
-5) 
+1) Given an array, partition the array with the range containing all of the elements (left-index is 0 and right-index is the    length of the array - 1) and the pivot position at the first element. 
+2) Set the value of the new pivot position as the return value of Step 1 
+3) If the left index is less than the right index, use the new value in Step 2 to partition the "left-half" of the array. The    left-index and the pivot position - 1 are the boundaries of the partition. Then, partition the "right-half" of the            array. Pivot Position + 1 and the right-index are the boundaries of the partition. 
+4) If the right-index is greater than the left-index, that means the array has been sorted. If so, do nothing. 
 
-Best Case:  <br />
-Average Case: <br />
-Worst Case: <br />
+Best Case: Odd-sized array where the pivot position is at the middle of the array <br />
+Average Case: Pivot position is left<br />
+Worst Case: Even-sized array of ascending order<br />
+
+In order to enhance the efficiency of the experimentation, we made multiple versions of the quickSort() method such that each method caters to each case. For Best Case, the pivot position is (right+left)/2. For Average Case, the pivot position is the left. For Worst Case, the pivot position is left and the array is in ascending order. 
 
 # Experiment methodology
-For our experiment, we wanted to test the runtime of our algorithm as the n x n matrix increases in size. 
-First, we created two methods, populateArray() and getAverage(). Method populate fills a matrix with consecutive integers 
-increasing by 1, starting at 1. 
+For our experiment, we wanted to test the runtime of our algorithm as the size of the array increases. 
+First, we created a method called getAverage(). Our QuickSort.java contained a method called buildArray() which we also used. This method creates an array with random elements. Its parameters allow us to change the size of the array and include the max value of the array if we want to make a new one.  
 
-For example, in a 3 x 3 matrix, the elements would be <br />
-| 1 2 3 | <br />
-| 4 5 6 | <br />
-| 7 8 9 | <br />
-
-Our method getAverage() returned the average time, in nanoseconds, it takes for the search algorithm to find its value in a given matrix. Average runtime is computed by repeating each matrixSearch() operation 10,000 times and dividing by number of iterations.
-
+Our method getAverage() returned the average time, in nanoseconds, it takes for the sort algorithm to sort a given array. Average runtime is computed by repeating each quickSort() operation 1,000 times and dividing by number of iterations.
 
 Procedure:
-1) 
-2) 
-3) 
-4) 
+1) Start with an array of size 100 created by buildArray()
+2) Find the average runtime of the best, average, and worst case for the array.
+3) Repeat step 2 on each matrix with size increasing by 100, up to size 10,000.
+4) Input the data into the csv file through a terminal redirect
 
 
 # Results
