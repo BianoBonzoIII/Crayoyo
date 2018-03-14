@@ -1,8 +1,9 @@
 /*
-
-
-
-
+Crayoyo
+Brian Lin, Aleksandra Koroza, Isaac Jon
+APCS2 pd2
+L01 -- What Does the Data Say?
+2018-03-03
  */
 
 public class QuickSortTester {
@@ -70,7 +71,7 @@ public class QuickSortTester {
 	//Use qsort1, which picks the median pivot point
 	//Since the array is in ascending order, median evenly partitions the array
 	
-	for(int i = 100; i <= 100000; i += 100) {
+	for(int i = 100; i <= 10000; i += 100) {
 	    int[] fast = populateArray(i);
 	    best = getAverage1(fast, 1000);
 	    System.out.println(best);
