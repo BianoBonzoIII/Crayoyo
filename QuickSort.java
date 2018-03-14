@@ -107,6 +107,24 @@ public class QuickSort
     }
   }
 
+   /*****************************************************
+   * void qsort1(int[])
+   * @param d -- array of ints to be sorted in place
+   * pivot point = middle, used in best case in lab01
+   *****************************************************/
+   public static void qsort1( int[] d ) { 
+    qsortH1(d, 0, d.length-1);
+  }
+
+  //you may need a helper method...
+  public static void qsortH1(int[] arr, int left, int right) {
+    if(left < right) {
+	int pvtPos = partition(arr, left, right, (right+left)/2);
+      qsortH1(arr, left, pvtPos-1);
+      qsortH1(arr, pvtPos+1, right);
+    }
+  }
+
 
   //main method for testing
   public static void main( String[] args )
@@ -118,7 +136,7 @@ public class QuickSort
     System.out.println("\narr1 init'd to: " );
     printArr(arr1);
  
-    qsort( arr1 );	
+    qsort1( arr1 );	
     System.out.println("arr1 after qsort: " );
     printArr(arr1);
     
@@ -146,7 +164,7 @@ public class QuickSort
     System.out.println("\narr2 init'd to: " );
     printArr(arr2);
 
-    qsort( arr2 );	
+    qsort1( arr2 );	
     System.out.println("arr2 after qsort: " );
     printArr(arr2);
 
@@ -163,7 +181,7 @@ public class QuickSort
     System.out.println("arrMatey post-shuffle: " );
     printArr(arrMatey);
 
-    qsort( arrMatey );
+    qsort1( arrMatey );
     System.out.println("arrMatey after sort: " );
     printArr(arrMatey);
     
