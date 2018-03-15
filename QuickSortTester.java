@@ -59,12 +59,15 @@ public class QuickSortTester {
 	//Method: For each array size, repeat QuickSort 1000 times to get average runtime
 	//From size 100 up to size 10000, x+= 100
 	
+	/*
 	for(int i = 10; i <= 100000; i += 1000) {
 	    int[] average = QuickSort.buildArray(i, 50);
 	    //shuffling could make sense
 	    middle = getAverage(average, 1000);
 	    System.out.println(middle);
 	}
+	*/
+	
 	
         
 	//Best Case
@@ -81,12 +84,13 @@ public class QuickSortTester {
 	//Worst Case
 	//Use qsort, which picks the leftmost pivot point
 	//Since the array is in ascending order, the leftmost is the smallest, so no values will be to the left of the pivot
-	/*
+	
        	for(int i = 10; i <= 100000; i += 1000) {
 	    int[] slow = populateArray(i);
-	    worst = getAverage1(slow, 1000);
+		worst = getAverage(slow, 1000);
+		System.out.println(worst);
 	}
-	*/
+	
     }
 
 
