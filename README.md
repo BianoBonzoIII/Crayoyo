@@ -54,10 +54,7 @@ Procedure:
 
 # Results
 ![alt text](screenshots/results.png "") <br />
-Link to GoogleSheets: https://docs.google.com/spreadsheets/d/1Yr_G6eNgB9Mb6IuLTP8lBSbK6iTulzi0MC4QCRFjxJg/edit?usp=sharing
-
-# Discussions and Sources of Error
-Our results show 
+Link to GoogleSheets: https://docs.google.com/spreadsheets/d/1ZFbmSS7K8IxqbPZelPKsaUUIa1jW6-LSNS4_TiEpuFc/edit#gid=0
 
 # Conclusion
-Based on our results, we can conclude that 
+Based on our results, we can conclude that the QuickSort algorithm is indeed O(nlogn) runtime for the best and average cases while it has O(n^2) runtime for the worst cases. The value of the pivot position is what best determines the runtime of algorithm. The size of the array can also be taken into consideration since that would result in more partitions that need to be run.
