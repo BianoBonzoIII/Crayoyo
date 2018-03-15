@@ -53,7 +53,7 @@ Procedure:
 
 
 # Results
-![alt text](screenshots/result.png "") <br />
+![alt text](screenshots/results.png "") <br />
 Link to GoogleSheets: https://docs.google.com/spreadsheets/d/1Yr_G6eNgB9Mb6IuLTP8lBSbK6iTulzi0MC4QCRFjxJg/edit?usp=sharing
 
 # Discussions and Sources of Error
