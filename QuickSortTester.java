@@ -60,36 +60,36 @@ public class QuickSortTester {
 	//From size 100 up to size 10000, x+= 100
 
 	/*
-	for(int i = 10; i <= 10000; i += 1000) {
+	for(int i = 10; i <= 10000; i += 100) {
 	    int[] average = QuickSort.buildArray(i, 50);
 	    //shuffling could make sense
 	    middle = getAverage(average, 1000);
 	    System.out.println(middle);
 	}
-	*/
-        
+	
+        */
 	//Best Case
 	//Use qsort1, which picks the median pivot point
 	//Since the array is in ascending order, median evenly partitions the array
-	/*
-	for(int i = 10; i <= 10000; i += 1000) {
+	
+	for(int i = 10; i <= 10000; i += 100) {
 	    int[] fast = populateArray(i);
 	    best = getAverage1(fast, 1000);
 	    System.out.println(best);
 	}
-	*/
+	
 
 	//Worst Case
 	//Use qsort, which picks the leftmost pivot point
 	//Since the array is in ascending order, the leftmost is the smallest, so no values will be to the left of the pivot
 	
-
-       	for(int i = 10; i <= 10000; i += 1000) {
+	/********
+       	for(int i = 10; i <= 10000; i += 100) {
 	    int[] slow = populateArray(i);
 		worst = getAverage(slow, 1000);
 		System.out.println(worst);
 	}
-	
+	*/
     }
 
 
